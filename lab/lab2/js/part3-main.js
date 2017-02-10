@@ -5,7 +5,12 @@
 /* =====================
   Call getAndParseData to grab our dataset through a jQuery.ajax call ($.ajax)
 ===================== */
-getAndParseData();
+var dataset;
+dataset = $.ajax('https://raw.githubusercontent.com/CPLN690-MUSA610/datasets/master/json/philadelphia-solar-installations.json')
+  .done(function(data){
+    dataset = JSON.parse(data);
+  });
+
 
 /* =====================
   The code here is triggered when you click on the button with ID #my-button
@@ -22,7 +27,7 @@ $('button#my-button').click(function(e) {
   console.log("booleanField", booleanField);
 
   stringField = $('#string').val();
-  console.log("stringField", stringField);
+  console.log("stringField(unused)", stringField);
 
 
   /* =====================
@@ -30,9 +35,9 @@ $('button#my-button').click(function(e) {
     objects
   ===================== */
   resetMap();
-
   /* =====================
     Call our plotData function. It should plot all the markers that meet our criteria
   ===================== */
-  plotData();
+  plotData(dataset);
+
 });

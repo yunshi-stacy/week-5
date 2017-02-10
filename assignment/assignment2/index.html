@@ -1,100 +1,125 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <!-- CSS Imports -->
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/leaflet.css" />
-    <link rel="stylesheet" href="css/grid.css" />
-    <!-- =====================
-    Edit css/main.css
-    ====================== -->
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
+<head>
+  <!-- CSS Imports -->
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/leaflet.css" />
+  <link rel="stylesheet" href="css/grid.css" />
+  <!-- =====================
+  Edit css/main.css
+  ====================== -->
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
 
-    <!-- =====================
+  <!-- =====================
 
-    # Week 4 - Assignment 2
+  # Week 4 - Assignment 2
 
-    ## Introduction
+  ## Introduction
 
-    Grids are at the foundation of many web designs (http://designmodo.com/grid-design-theory/).
-    For this assignment, you will try to recreate a design from a real website.
+  Grids are at the foundation of many web designs (http://designmodo.com/grid-design-theory/).
+  For this assignment, you will try to recreate a design from a real website.
 
-    ## Using a Grid
+  ## Using a Grid
 
-    The CSS file css/grid.css contains several classes that set up the grid we
-    will use for this exercise. Take a look at it to see what classes it offers.
+  The CSS file css/grid.css contains several classes that set up the grid we
+  will use for this exercise. Take a look at it to see what classes it offers.
 
-    1. column: a column controls the width of a block of content in the grid
-    2. row: a row is used to create a horizontal group of columns
-    3. container: a container positions a row in the center of the page and gives
-       it the proper width
+  1. column: a column controls the width of a block of content in the grid
+  2. row: a row is used to create a horizontal group of columns
+  3. container: a container positions a row in the center of the page and gives
+  it the proper width
 
-    Example:
+  Example:
 
-    <div class="container">
-      <div class="row">
-        <div class="column-one-third">
-          Fruits that are good
-        </div>
-        <div class="column-two-thirds">
-          <ul>
-            <li>Pears</li>
-            <li>Plums</li>
-          </ul>
-        </div>
-      </div>
+  <div class="container">
+  <div class="row">
+  <div class="column-one-third">
+  Fruits that are good
+</div>
+<div class="column-two-thirds">
+<ul>
+<li>Pears</li>
+<li>Plums</li>
+</ul>
+</div>
+</div>
+</div>
+
+## Task
+
+Recreate one of the following websites using your own code. For each website,
+see the screen capture that shows which parts to recreate. Your goal for
+recreating these sites is to make them look as similar as possible in terms
+of style and layout. However, you should use your own text and images. For
+royalty free images, check out http://thestocks.im/ or use your own photos.
+
+URL: http://raw.densitydesign.org/
+Which part to recreate: screen-raw.jpg
+
+URL: https://www.cardnest.com/
+Which part to recreate: screen-cardnest.jpg
+
+URL: http://www.hbs.edu/
+WHich part to recreate: screen-hbs.jpg
+
+## Do your best!
+
+Don't worry about getting it perfect. Just try to get it as close as you can.
+
+====================== -->
+<!--URL: http://raw.densitydesign.org/ screen-raw.jpg-->
+<div class='container'>
+  <div class="row" id='row1'>
+    <div class="column-one-quarter"></div>
+    <div class="column-one-half">
+
+      <h1>TRAVEL PLAN</h1>
+      <p>Where is your next destination?</p>
+
+      <button id='button1'>HAVE A PLAN</button>
+      <button id='buttonw'>RANDOMIZE!!!</button>
+
+
     </div>
+    <div class='column-full'></div>
+  </div>
 
-    ## Task
-
-    Recreate one of the following websites using your own code. For each website,
-    see the screen capture that shows which parts to recreate. Your goal for
-    recreating these sites is to make them look as similar as possible in terms
-    of style and layout. However, you should use your own text and images. For
-    royalty free images, check out http://thestocks.im/ or use your own photos.
-
-    URL: http://raw.densitydesign.org/
-    Which part to recreate: screen-raw.jpg
-
-    URL: https://www.cardnest.com/
-    Which part to recreate: screen-cardnest.jpg
-
-    URL: http://www.hbs.edu/
-    WHich part to recreate: screen-hbs.jpg
-
-    ## Do your best!
-
-    Don't worry about getting it perfect. Just try to get it as close as you can.
-
-    ====================== -->
-
-    <div class="container">
-      <div class="row">
-        <div class="column-one-half">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae enim vitae justo tincidunt porttitor et a eros. Quisque accumsan ex metus, et egestas ipsum pellentesque a. In elementum suscipit bibendum. Vestibulum posuere risus quis convallis commodo. Nunc sed est ante. Fusce faucibus, sem nec eleifend tincidunt, mauris nibh condimentum orci, ut imperdiet nulla elit quis magna. Nam vitae lacus dolor. Phasellus bibendum a lorem sed hendrerit. Sed aliquam porttitor dignissim. Cras efficitur vestibulum lorem et consequat.
-          </p>
-        </div>
-        <div class="column-one-half">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae enim vitae justo tincidunt porttitor et a eros. Quisque accumsan ex metus, et egestas ipsum pellentesque a. In elementum suscipit bibendum. Vestibulum posuere risus quis convallis commodo. Nunc sed est ante. Fusce faucibus, sem nec eleifend tincidunt, mauris nibh condimentum orci, ut imperdiet nulla elit quis magna. Nam vitae lacus dolor. Phasellus bibendum a lorem sed hendrerit. Sed aliquam porttitor dignissim. Cras efficitur vestibulum lorem et consequat.
-          </p>
-        </div>
+    <div class="row" id='row2'>
+      <div class='column-full'>
+        <h3>TO DO LIST</h3>
       </div>
-      <div class="row">
-        <div class="column-one-third">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae enim vitae justo tincidunt porttitor et a eros. Quisque accumsan ex metus, et egestas ipsum pellentesque a. In elementum suscipit bibendum. Vestibulum posuere risus quis convallis commodo. Nunc sed est ante. Fusce faucibus, sem nec eleifend tincidunt, mauris nibh condimentum orci, ut imperdiet nulla elit quis magna. Nam vitae lacus dolor. Phasellus bibendum a lorem sed hendrerit. Sed aliquam porttitor dignissim. Cras efficitur vestibulum lorem et consequat.
-          </p>
-        </div>
-        <div class="column-two-thirds">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae enim vitae justo tincidunt porttitor et a eros. Quisque accumsan ex metus, et egestas ipsum pellentesque a. In elementum suscipit bibendum. Vestibulum posuere risus quis convallis commodo. Nunc sed est ante. Fusce faucibus, sem nec eleifend tincidunt, mauris nibh condimentum orci, ut imperdiet nulla elit quis magna. Nam vitae lacus dolor. Phasellus bibendum a lorem sed hendrerit. Sed aliquam porttitor dignissim. Cras efficitur vestibulum lorem et consequat.
-          </p>
-        </div>
+      <div class="column-one-quarter">
+        <img src='img/travel.svg'/>
+        <h4>TRAVEL</h4>
+        <p>
+          <span>Always</span> be on the road!
+        </p>
       </div>
+      <div class="column-one-quarter">
+        <img src='img/eat.svg'/>
+        <h4>EAT</h4>
+        <p>
+          Yummy, yummy, <span>YUMMY</span>!
+        </p>
+      </div>
+      <div class="column-one-quarter">
+        <img src='img/learn.svg'/>
+        <h4>LEARN</h4>
+        <p>
+          Be <span>HUNGER</span>!
+        </p>
+      </div>
+      <div class="column-one-quarter">
+        <img src='img/next.svg'/>
+        <h4>NEXT PLAN!</h4>
+        <p>
+          Bon <span>VOYAGE</span>!
+        </p>
+      </div>
+
     </div>
-  </body>
+  </div>
+</body>
 </html>
